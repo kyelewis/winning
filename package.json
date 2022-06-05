@@ -1,0 +1,36 @@
+{
+  "name": "@kyedoesdev/winning",
+  "version": "0.1.0",
+  "description": "A CLI helper for various helpful AWS things",
+  "main": "bin/index.js",
+  "bin": {
+    "winning": "bin/index.ts"
+  },
+  "engines": {
+    "node": "18.x",
+    "pnpm": "7.x"
+  },
+  "keywords": [
+    "cli",
+    "aws"
+  ],
+  "scripts": {
+    "start": "node --no-warnings -r esbuild-register src/index.ts",
+    "build": "node -r esbuild-register scripts/build.ts",
+    "prettier": "prettier 'src/**/*.ts' -w"
+  },
+  "author": "Kye Lewis <kye@kyedoesdev.com>",
+  "license": "MIT",
+  "dependencies": {
+    "@aws-crypto/sha256-js": "2.0.1",
+    "@aws-sdk/protocol-http": "3.78.0",
+    "@aws-sdk/signature-v4": "3.78.0",
+    "inquirer": "8.2.4",
+    "node-fetch": "3.2.5"
+  },
+  "devDependencies": {
+    "esbuild": "0.14.42",
+    "esbuild-register": "3.3.3",
+    "prettier": "2.6.2"
+  }
+}
