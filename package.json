@@ -1,10 +1,10 @@
 {
   "name": "@kyedoesdev/winning",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "description": "A CLI helper for various helpful AWS things",
   "main": "bin/index.js",
   "bin": {
-    "winning": "bin/index.ts"
+    "winning": "bin/index.js"
   },
   "engines": {
     "node": "18.x",
